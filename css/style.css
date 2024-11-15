@@ -623,7 +623,6 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* gap: 25px; */
     width: 140px;
     height: 50px;
     background-color: #373634;
@@ -668,9 +667,7 @@ hr {
 .menu-svg {
     display: none;
 }
-.aside {
-    display: block;
-}
+
 .menu-close {
     display: none;
 }
@@ -712,7 +709,7 @@ hr {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 21px;
+        gap: 10px;
     }
     .card-overlay {
         width: 20vw;
@@ -735,11 +732,20 @@ hr {
     .header-img {
         margin-top: 25%;
     }
+    .header-nav {
+        padding: 0 20px;
+    }
     .nav-list>li {
         width: 100%;
     }
     .nav-list-link.active {
         background-color: #FFC961;
+    }
+    .header-social-icon {
+        position: absolute;
+        bottom: 0;
+        left: 8%;
+        gap: 15%;
     }
     .switch-btns {
         left: 4%;

@@ -19,7 +19,6 @@ home.addEventListener("click", () => {
     mainAbout.style.display = "none";
     mainPortfolio.style.display = "none";
   }
-  console.log(mainAbout.style.display);
 });
 about.addEventListener("click", () => {
   if (mainAbout.style.display === "none") {
@@ -70,6 +69,12 @@ burgerMenu.addEventListener('click', ()=>{
     close.style.display = "block"
     homeSection.style.display = "none"
 })
+close.addEventListener('click', ()=>{
+    aside.style.display = "none";
+    burgerMenu.style.display = "block";
+    close.style.display = "none"
+    homeSection.style.display = "block"
+})
 
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".nav-list-link");
@@ -80,3 +85,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+function checkScreenSizeAndAct() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth > 760 && screenWidth < 995) {
+    console.log("The screen width is between 760px and 995px.");
+    // Виконайте вашу дію тут
+  } else {
+    console.log("The screen width is outside the specified range.");
+    // Інші дії, якщо потрібно
+  }
+}
+
+checkScreenSizeAndAct();
+
+window.addEventListener('resize', checkScreenSizeAndAct);
+
