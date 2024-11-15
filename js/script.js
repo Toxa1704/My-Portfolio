@@ -2,10 +2,13 @@ const home = document.querySelector(".home");
 const about = document.querySelector(".about");
 const portfolio = document.querySelector(".portfolio-link");
 const homeSection = document.querySelector(".main-section");
+const burgerMenu = document.querySelector(".menu-svg");
 const mainAbout = document.querySelector("#about");
 const mainPortfolio = document.querySelector("#portfolio");
 const toggleEng = document.querySelector("#pageEng");
 const toggleUkr = document.querySelector("#pageUkr");
+const aside = document.querySelector('.aside');
+const close = document.querySelector('.menu-close')
 home.addEventListener("click", () => {
   if (homeSection.style.display === "none") {
     homeSection.style.display = "block";
@@ -60,6 +63,13 @@ toggleUkr.addEventListener("click", () => {
     toggleUkr.classList = "switch-on";
   }
 });
+
+burgerMenu.addEventListener('click', ()=>{
+    aside.style.display = "block";
+    burgerMenu.style.display = "none";
+    close.style.display = "block"
+    homeSection.style.display = "none"
+})
 
 document.addEventListener("DOMContentLoaded", function () {
   const links = document.querySelectorAll(".nav-list-link");
