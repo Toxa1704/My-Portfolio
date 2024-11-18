@@ -66,8 +66,11 @@ toggleUkr.addEventListener("click", () => {
 burgerMenu.addEventListener('click', ()=>{
     aside.style.display = "block";
     burgerMenu.style.display = "none";
-    close.style.display = "block"
-    homeSection.style.display = "none"
+    close.style.display = "block";
+    homeSection.style.display = "none";
+    mainAbout.style.display = "none";
+    about.style.display = "flex"
+    mainPortfolio.style.display = "none";
 })
 close.addEventListener('click', ()=>{
     aside.style.display = "none";
@@ -86,19 +89,68 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function checkScreenSizeAndAct() {
+function checkScreenSizeAndActAbout() {
   const screenWidth = window.innerWidth;
 
-  if (screenWidth > 760 && screenWidth < 995) {
-    console.log("The screen width is between 760px and 995px.");
-    // Виконайте вашу дію тут
-  } else {
-    console.log("The screen width is outside the specified range.");
-    // Інші дії, якщо потрібно
+  if (screenWidth > 360 && screenWidth < 580) {
+    console.log("The screen width is between 360px and 580px.");
+    about.addEventListener('click', ()=>{
+      if (about.style.display === "none") {
+        about.style.display = "block";
+        homeSection.style.display = "none";
+        mainPortfolio.style.display = "none";
+        close.style.display = "block";
+        burgerMenu.style.display = "none";
+
+      } else {
+        homeSection.style.display = "none";
+        about.style.display = "block";
+        mainPortfolio.style.display = "none";
+        aside.style.display = "none";
+        close.style.display = "none";
+        burgerMenu.style.display = "block";
+        burgerMenu.style.fill = "#FFA800";
+        console.log('ok about');
+
+      }
+    })
+
   }
+
+}
+function checkScreenSizeAndActPortfolio() {
+  const screenWidth = window.innerWidth;
+
+  if (screenWidth > 360 && screenWidth < 580) {
+    console.log("The screen width is between 360px and 580px.");
+    portfolio.addEventListener('click', ()=>{
+      if (mainPortfolio.style.display === "none") {
+        about.style.display = "block";
+        homeSection.style.display = "none";
+        mainPortfolio.style.display = "none";
+        close.style.display = "block";
+        burgerMenu.style.display = "none";
+
+      } else {
+        homeSection.style.display = "none";
+        about.style.display = "none";
+        mainPortfolio.style.display = "block";
+        aside.style.display = "none";
+        close.style.display = "none";
+        burgerMenu.style.display = "block";
+        burgerMenu.style.fill = "#FFA800";
+        console.log('ok portfolio');
+
+      }
+    })
+
+  }
+
 }
 
-checkScreenSizeAndAct();
+checkScreenSizeAndActAbout();
+checkScreenSizeAndActPortfolio();
 
-window.addEventListener('resize', checkScreenSizeAndAct);
+window.addEventListener('resize', checkScreenSizeAndActAbout);
+window.addEventListener('resize', checkScreenSizeAndActPortfolio);
 

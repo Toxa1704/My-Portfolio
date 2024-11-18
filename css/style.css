@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-        font-family: "Inter", serif;
+    font-family: "Inter", serif;
     font-optical-sizing: auto;
     background-image: url(/img/bgimg.png);
     background-size: cover;
@@ -96,12 +96,13 @@ body {
 .nav-list-link:visited:active {
     color: #696969;
 }
+
 .nav-list-link.active {
     background-color: #FFA800;
 }
 
 .nav-list>li:hover {
-    background:#EEBC5B;
+    background: #EEBC5B;
     border-left: 5px solid #FFA800;
 }
 
@@ -192,7 +193,8 @@ main {
     color: #696969;
 }
 
-.main-section-btn,.portfolio-btn {
+.main-section-btn,
+.portfolio-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,7 +218,8 @@ main {
     align-items: center;
 }
 
-.main-section-btn:hover,.card-overlay-btn:hover {
+.main-section-btn:hover,
+.card-overlay-btn:hover {
     background-color: #FFA800;
 }
 
@@ -347,7 +350,6 @@ hr {
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    /* line-height: 20px; */
     color: rgba(0, 0, 0, 0.8);
 }
 
@@ -664,6 +666,7 @@ hr {
     color: aliceblue;
     padding: 16px;
 }
+
 .menu-svg {
     display: none;
 }
@@ -671,39 +674,49 @@ hr {
 .menu-close {
     display: none;
 }
+
 @media (min-width:760px) and (max-width: 995px) {
     body {
         background-position: right;
     }
+
     .aside {
         width: 200px;
     }
+
     .header-img {
         margin-top: 30px;
         padding: 0 50px;
     }
+
     .nav-list {
         margin-top: 0;
     }
+
     .nav-list>li {
         width: 200px;
         height: 47px;
         font-size: 16px;
     }
+
     .main-section {
         padding: 0;
     }
+
     .main-section-title {
         font-size: 22px;
         line-height: 26px;
     }
+
     .header-social-icon {
         flex-direction: column;
         align-items: flex-start;
         gap: 10px;
         padding-left: 20px;
     }
-    .btn-about-me, .btn-portfolio-me {
+
+    .btn-about-me,
+    .btn-portfolio-me {
         margin-right: 10px;
         display: flex;
         flex-direction: column;
@@ -711,45 +724,56 @@ hr {
         align-items: center;
         gap: 10px;
     }
+
     .card-overlay {
         width: 20vw;
         height: 25vh;
     }
+
     .card-overlay-btn {
         width: 115px;
         height: 40px;
         font-size: 12px;
     }
 }
-@media (min-width:360px) and (max-width: 580px){
+
+@media (min-width:360px) and (max-width: 580px) {
     body {
         background-position: right;
     }
+
     .aside {
         display: none;
         width: 100%;
     }
+
     .header-img {
         margin-top: 25%;
     }
+
     .header-nav {
         padding: 0 20px;
     }
+
     .nav-list>li {
         width: 100%;
     }
+
     .nav-list-link.active {
         background-color: #FFC961;
     }
+
     .header-social-icon {
         position: absolute;
         bottom: 0;
         left: 8%;
         gap: 15%;
     }
+
     .switch-btns {
         left: 4%;
     }
+
     .menu-svg {
         display: block;
         position: absolute;
@@ -757,15 +781,18 @@ hr {
         top: 3%;
         cursor: pointer;
     }
+
     .menu-svg:hover {
         fill: #FFA800;
     }
+
     .menu-close {
         position: absolute;
         right: 4%;
         top: 3%;
         cursor: pointer;
     }
+
     .main-section {
         padding: 20px;
         height: 100vh;
@@ -773,13 +800,137 @@ hr {
         flex-direction: column;
         justify-content: space-evenly;
     }
-    .main-section-title{
+
+    .main-section-title {
         padding-top: 40%;
     }
+
     .main-section-buttons {
         flex-direction: column;
     }
+
     .main-section-buttons>a {
         width: 100%;
     }
+
+    .switch-on {
+        width: 36px;
+        height: 25px;
+        border-radius: 32px;
+        border-radius: 26px;
+        font-size: 10px;
+        font-weight: 500;
+    }
+
+    .switch-btns {
+        top: 3%;
+        width: 50px;
+        height: 25px;
+        padding: 8px 0;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+
+    .switch-btn>a {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 6px;
+    }
+
+    #about, #portfolio {
+        padding: 15px;
+        height: 100vh;
+    }
+
+    .btn-about-me, .btn-portfolio-me {
+        display: none;
+    }
+
+    .content-about-me, .content-portfolio-me {
+        max-width: 100%;
+    }
+
+    .about-me-title, .portfolio-me-title {
+        padding-top: 7%;
+        font-size: 0.8em;
+    }
+
+    .about-me-subtitle, .portfolio-me-subtitle {
+        padding-top: 0px;
+    }
+
+    .about-me-subtitle>p, .portfolio-me-subtitle>p {
+        font-size: 0.7em;
+        line-height: 17px;
+    }
+
+    .about-me-text, .portfolio-me-text {
+        margin-top: 5px;
+        font-size: 10px;
+        line-height: 19px;
+        color: rgba(0, 0, 0, 0.7);
+        text-align: justify;
+    }
+
+    hr {
+        margin-top: 7px;
+    }
+
+    .professional-skill-title,
+    .personal-hobby-title {
+        margin-top: 6px;
+        font-size: 1em;
+    }
+.dev-skills-title,
+.soft-skills-title,
+.reading-title,
+.games-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.games-title, .soft-skills-title {
+    margin-top: 6px;
+}
+.dev-skills-list,
+.soft-skills-list {
+    font-size: 10px;
+}
+.dev-skills-list>li, .soft-skills-list>li {
+
+    padding: 2px 4px;
+    border-radius: 25px;
+}
+.cover-site {
+    margin-top: 20px;
+}
+.cover-site-cards {
+    gap: 8px;
+}
+.card-overlay {
+    width: 35vw;
+    height: 35vh;
+    border-radius: 10px;
+    position: relative;
+}
+.card-overlay-btn {
+    width: 60px;
+    height: 25px;
+    border-radius: 13px;
+    font-weight: 500;
+    font-size: 10px;
+}
+.overlay-text-title {
+    font-weight: 600;
+    font-size: 10px;
+}
+
+.overlay-text-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+}
+.card-overlay:hover .card-overlay-text {
+    height: 35%;
+}
 }
