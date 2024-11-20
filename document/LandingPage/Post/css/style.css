@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     padding-left: 60px;
     width: 20%;
@@ -61,18 +62,31 @@ body {
     position: relative;
     top: 0;
     left: -45px;
+    cursor: pointer;
 }
+
 .header-social-icon {
     display: flex;
     flex-wrap: nowrap;
     gap: 6px;
 }
+
+.header-social-icon>a>svg>rect:hover,
+.header-person-account>svg>rect:hover,
+.header-burger-menu>svg>rect:hover {
+    fill: #36C2CE;
+    transition: all 0.3s;
+}
+
 .header-person-account {
     cursor: pointer;
 }
+
 .header-burger-menu {
     cursor: pointer;
+    transition: all 0.3s;
 }
+
 .header-menu {
     display: none;
     position: absolute;
@@ -89,24 +103,29 @@ body {
     padding: 13px;
     box-shadow: -8px 6px 18px 1px rgba(0, 0, 0, 0.2);
 }
+
 .header-menu-list>a>li {
     list-style-type: none;
     color: #696969;
     padding: 5px 0;
 }
+
 .header-menu-list>a>li:hover {
     color: #478CCF;
 }
+
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .hero-img>img {
     position: relative;
     top: 5%;
     width: 130%;
 }
+
 .hero-content {
     z-index: 1;
     /* position: absolute; */
@@ -114,36 +133,210 @@ body {
     height: 473px;
     border-color: aquamarine;
 }
+
 .hero-title>span {
-font-family: 'Jura';
-font-style: normal;
-font-weight: 700;
-font-size: 70px;
-line-height: 83px;
-color: #36C2CE;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 83px;
+    color: #36C2CE;
 }
+
 .hero-title {
-font-family: 'Jura';
-font-style: normal;
-font-weight: 700;
-font-size: 70px;
-line-height: 83px;
-color: #478CCF;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 83px;
+    color: #478CCF;
 }
+
 .hero-block-form {
-position: relative;
-left: -10%;
-padding-top: 100px;
+    position: relative;
+    left: -10%;
+    padding-top: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
 }
+
 .block-form {
-width: 200px;
-height: 104px;
-background: #478CCF;
+    width: 200px;
+    height: 104px;
+    background: #478CCF;
+    border-radius: 20px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.block-form:hover {
+    transform: scale(1, 1.1);
+    background-color: #36C2CE;
+}
+
+.hero-track-down {
+    margin-top: 20px;
+}
+
+.hero-track-down>form>input {
+    width: 610px;
+    height: 64px;
+    position: relative;
+    left: -9%;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: -8px 6px 18px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    padding-left: 30px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #696969;
+}
+
+.hero-track-down>form>button {
+    position: relative;
+    z-index: 10;
+    top: -58px;
+    right: -53%;
+    padding: 12px 46px;
+    width: 218px;
+    height: 51.43px;
+    background: #4535C1;
+    border: none;
+    border-radius: 40px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hero-track-down>form>button:hover {
+    background: #687EFF;
+}
+
+#about {
+    padding: 0 54px;
+}
+
+.about-title {
+    padding-left: 60px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 83px;
+    color: #478CCF;
+}
+
+.about-content {
+    margin-top: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-text {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-text-title {
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    color: #424242;
+}
+
+.about-text-text {
+    padding-top: 52px;
+    padding-left: 95px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #696969;
+}
+
+.about-text-btn {
+    align-self: flex-end;
+    margin-top: 56px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 40px;
+    width: 204px;
+    height: 48px;
+    background: #4535C1;
+    border-radius: 40px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.about-text-btn:hover {
+    background: #687EFF;
+}
+.about-blocks {
+    max-width: 558px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+}
+.about-blocks-blok {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 16px;
+width: 260px;
+height: 212px;
+background: rgba(54, 194, 206, 0.6);
 border-radius: 20px;
+}
+.block-img {
+    width: 80px;
+    height: 80px;
+}
+.block-text {
+    margin-top: 20px;
 font-family: 'Jura';
 font-style: normal;
 font-weight: 500;
@@ -151,65 +344,5 @@ font-size: 24px;
 line-height: 28px;
 text-align: center;
 letter-spacing: 0.05em;
-color: #FFFFFF;
-display: flex;
-justify-content: center;
-align-items: center;
-cursor: pointer;
-transition: all 0.3s;
-}
-.block-form:hover {
-    transform: scale(1,1.1);
-    background-color: #36C2CE;
-}
-.hero-track-down {
-    margin-top: 20px;
-}
-/* .hero-track-down>form {
-    display: flex;
-} */
-.hero-track-down>form>input {
-width: 610px;
-height: 64px;
-position: relative;
-left: -9%;
-border: 0.5px solid #D8D8D8;
-box-shadow: -8px 6px 18px 1px rgba(0, 0, 0, 0.2);
-border-radius: 40px;
-padding-left: 30px;
-font-family: 'Jura';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-letter-spacing: 0.05em;
-color: #696969;
-}
-.hero-track-down>form>button {
-position: relative;
-z-index: 10;
-top: -58px;
-right: -53%;
-padding: 12px 46px;
-width: 218px;
-height: 51.43px;
-background: #4535C1;
-border: none;
-border-radius: 40px;
-font-family: 'Jura';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-letter-spacing: 0.05em;
-color: #FFFFFF;
-cursor: pointer;
-transition: all 0.3s;
-}
-.hero-track-down>form>button:hover {
-background: #687EFF;
+color: #424242;
 }
