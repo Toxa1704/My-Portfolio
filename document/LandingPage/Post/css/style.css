@@ -244,7 +244,8 @@ body {
 }
 
 .about-title,
-.newsandtips-title {
+.newsandtips-title,
+.mailinglist-title {
     padding-left: 60px;
     font-family: 'Jura';
     font-style: normal;
@@ -479,10 +480,88 @@ body {
     border-radius: 40px;
     transition: all 0.3s;
 }
+
 .block-card-btn:hover {
     background-color: #4535C1;
     color: #FFFFFF;
 }
+
 .newsandtips-btn {
     margin: 56px auto 0;
+}
+
+#mailinglist {
+    max-width: 1115px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+.mailinglist-title {
+    padding-left: 0;
+}
+
+.mailinglist-block-content {
+    margin-top: 56px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    padding: 36px 20px;
+    gap: 16px;
+    width: 1004px;
+    height: 532px;
+    background: #FFFFFF;
+    border: 0.5px solid #D8D8D8;
+    box-shadow: -8px 6px 18px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+}
+.block-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.content-text-title {
+font-family: 'Jura';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 59px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #424242;
+padding: 0 14px;
+}
+.content-text-text {
+font-family: 'Jura';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+display: flex;
+align-items: center;
+letter-spacing: 0.05em;
+color: #696969;
+}
+.block-content-text>form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.content-text-input {
+width: 440px;
+height: 50px;
+background: #FFFFFF;
+border: 1px solid #D8D8D8;
+border-radius: 40px;
+font-family: 'Jura';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+letter-spacing: 0.05em;
+color: #696969;
+padding-left: 25px;
 }
