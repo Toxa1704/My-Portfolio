@@ -186,6 +186,9 @@ body {
     transform: scale(1, 1.1);
     background-color: #36C2CE;
 }
+.block-form>a {
+    color: #FFFFFF;
+}
 
 .hero-track-down {
     margin-top: 20px;

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Form for sending</title>
+</head>
+<body>
+    <h1 class="sending-title">Форма для доставки</h1>
+    <section class="sending-btns">
+        <button class="sending-btn natural">
+            Фізична особа
+        </button>
+        <button class="sending-btn business">
+            Бізнес кліент
+        </button>
+    </section>
+    <section class="sending-natural-person">
+        <form action="" class="person-info">
+            <label for="">Інформація про відправника</label><br>
+            <input type="text" placeholder="Ім'я та прізвище"><br>
+            <input type="tel" name="tel" id="tel" placeholder="Номер телефону"><br>
+            <input type="email" name="email" id="email" placeholder="Ваш E-mail"><br>
+        </form>
+        <form action="" class="natural-person-departure">
+            <h3 class="person-departure-title">Місце Відправлення</h3>
+            <div class="departure-adress">
+                <label for="checkbox" class="departure-adress-title">Відправлення з адреси (Кур'єр забере посилку)</label>
+                <input type="checkbox" name="checkbox" id="checkbox"><br>
+                <label for="">Адреса відправника</label><br>
+                <input type="text" placeholder="Вулиця"><br>
+                <input type="text" placeholder="Будинок"><br>
+                <input type="text" placeholder="Квартира/Офіс"><br>
+                <input type="text" placeholder="Місто"><br>
+                <input type="number" placeholder="Поштовий індекс"><br>
+            </div>
+            <div class="departure-branch">
+                <label for="">Відправлення з відділення</label><br>
+                <input type="text" placeholder="Місто"><br>
+                <input type="text" placeholder="Номер або адреса відділення"><br>
+            </div>
+            <div class="recipient-information">
+                <label for="">Інформація про отримувача</label><br>
+            <input type="text" placeholder="Ім'я та прізвище"><br>
+            <input type="tel" name="tel" id="tel" placeholder="Номер телефону"><br>
+            <input type="email" name="email" id="email" placeholder="Ваш E-mail"><br>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
