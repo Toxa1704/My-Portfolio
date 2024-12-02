@@ -1,52 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/form.css">
-    <title>Form for sending</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/form.css" />
+    <title>fieldset for sending</title>
+  </head>
+  <body>
     <h1 class="sending-title">Форма для доставки</h1>
     <section class="sending-btns">
-        <button class="sending-btn natural">
-            Фізична особа
-        </button>
-        <button class="sending-btn business">
-            Бізнес кліент
-        </button>
+      <button class="sending-btn natural">Фізична особа</button>
+      <button class="sending-btn business">Бізнес кліент</button>
     </section>
     <section class="sending-natural-person">
-        <form action="" class="person-info">
-            <label for="">Інформація про відправника</label><br>
-            <input type="text" placeholder="Ім'я та прізвище"><br>
-            <input type="tel" name="tel" id="tel" placeholder="Номер телефону"><br>
-            <input type="email" name="email" id="email" placeholder="Ваш E-mail"><br>
-        </form>
-        <form action="" class="natural-person-departure">
-            <h3 class="person-departure-title">Місце Відправлення</h3>
-            <div class="departure-adress">
-                <label for="checkbox" class="departure-adress-title">Відправлення з адреси (Кур'єр забере посилку)</label>
-                <input type="checkbox" name="checkbox" id="checkbox"><br>
-                <label for="">Адреса відправника</label><br>
-                <input type="text" placeholder="Вулиця"><br>
-                <input type="text" placeholder="Будинок"><br>
-                <input type="text" placeholder="Квартира/Офіс"><br>
-                <input type="text" placeholder="Місто"><br>
-                <input type="number" placeholder="Поштовий індекс"><br>
+      <form>
+        <fieldset action="" class="person-info">
+          <legend for="">Інформація про відправника</legend>
+          <br />
+          <input type="text" placeholder="Ім'я та прізвище" /><br />
+          <input
+            type="tel"
+            name="tel"
+            id="tel"
+            placeholder="Номер телефону"
+          /><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ваш E-mail"
+          /><br />
+        </fieldset>
+        <fieldset action="" class="natural-person-departure">
+          <legend class="person-departure-title">Місце Відправлення</legend>
+          <div class="departure-adress">
+            <div class="departure-adress-checkbox">
+              <label for="checkbox" class="departure-adress-title"
+                >Відправлення з адреси (Кур'єр забере посилку)</label
+              >
+              <input type="checkbox" name="checkbox" id="checkbox" />
             </div>
-            <div class="departure-branch">
-                <label for="">Відправлення з відділення</label><br>
-                <input type="text" placeholder="Місто"><br>
-                <input type="text" placeholder="Номер або адреса відділення"><br>
+            <label for="">Адреса відправника</label><br />
+            <input type="text" placeholder="Вулиця" /><br />
+            <input type="text" placeholder="Будинок" /><br />
+            <input type="text" placeholder="Квартира/Офіс" /><br />
+            <input type="text" placeholder="Місто" /><br />
+            <input type="number" placeholder="Поштовий індекс" /><br />
+          </div>
+          <div class="departure-branch">
+            <div class="departure-branch-checkbox">
+              <label for="">Відправлення з відділення</label>
+              <input type="checkbox" name="checkbox" id="checkbox" /><br />
             </div>
-            <div class="recipient-information">
-                <label for="">Інформація про отримувача</label><br>
-            <input type="text" placeholder="Ім'я та прізвище"><br>
-            <input type="tel" name="tel" id="tel" placeholder="Номер телефону"><br>
-            <input type="email" name="email" id="email" placeholder="Ваш E-mail"><br>
-            </div>
-        </form>
+            <input type="text" placeholder="Місто" /><br />
+            <input
+              type="text"
+              placeholder="Номер або адреса відділення"
+            /><br />
+          </div>
+          <div class="recipient-infieldsetation">
+            <label for="">Інформація про отримувача</label><br />
+            <input type="text" placeholder="Ім'я та прізвище" /><br />
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Номер телефону"
+            /><br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Ваш E-mail"
+            /><br />
+          </div>
+        </fieldset>
+        <fieldset action="" class="natural-person-delivery">
+          <legend class="person-delivery-title">Спосіб доставки</legend>
+          <div class="person-delyvery-checkbox adress">
+            <label for="checkbox">Доставка на адресу отримувача</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+          </div>
+          <input type="text" placeholder="Вулиця" /><br />
+          <input type="text" placeholder="Будинок" /><br />
+          <input type="text" placeholder="Квартира/Офіс" /><br />
+          <input type="text" placeholder="Місто" /><br />
+          <input type="number" placeholder="Поштовий індекс" /><br />
+          <div class="person-delyvery-checkbox department">
+            <label for="checkbox">Доставка у відділення</label>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+          </div>
+          <input type="text" placeholder="Місто" /><br />
+          <input type="text" placeholder="Номер або адреса відділення" /><br />
+        </fieldset>
+        <fieldset action="" class="natural-person-parcel-details">
+          <legend class="parsel-detail-title">Деталі посилки</legend>
+          <input type="text" placeholder="Опис вмісту посилки"/><br>
+          <input type="number" placeholder="Вага (кг)">
+          <div>
+            <label for="size">Розміри посилки (Довжина, Ширина, Висота в см):</label>
+            <input type="number" name="size" placeholder="Довжина (см)">
+            <input type="number" name="size" placeholder="Ширина (см)">
+            <input type="number" name="size" placeholder="Висота(см)">
+          </div>
+        </fieldset>
+        <fieldset action="" class="natural-person-type-delivery">
+          <legend class="type-delivery-title">Тип доставки</legend>
+          <div class="input-type-radio">
+            <input type="radio" name="standart-delivery" id="standart-delivery" value="standart">
+            <label for="standart-delivery">Стандартна доставка</label>
+          </div>
+          <div class="input-type-radio">
+            <input type="radio" name="express-delivery" id="express-delivery" value="express">
+            <label for="express-delivery">Експрес доставка</label>
+          </div>
+          <div class="input-type-radio">
+            <input type="radio" name="international-delivery" id="international-delivery" value="international">
+            <label for="international-delivery">Міжнародна доставка</label>
+          </div>
+        </fieldset>
+        <input type="submit" value="Submit" />
+      </form>
     </section>
-</body>
+  </body>
 </html>

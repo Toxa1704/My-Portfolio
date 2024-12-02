@@ -64,3 +64,42 @@ line-height: 17px;
 letter-spacing: 0.05em;
 border: 1px solid #4535C1;
 }
+legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 24px;
+}
+.person-info, 
+.natural-person-departure,
+.natural-person-delivery,
+.natural-person-parcel-details,
+.natural-person-type-delivery {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px;
+    width: 40%;
+    border: 2px solid #36C2CE;
+border-radius: 15px;
+}
+#checkbox {
+    width: 15px;
+    height: 15px;
+}
+.departure-adress-checkbox, 
+.departure-branch-checkbox, 
+.person-delyvery-checkbox {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 5px;
+}
+.input-type-radio {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 33%;
+}
+input[type="radio"] {
+    margin: 0;
+    max-width: 20px;
+}
