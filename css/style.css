@@ -616,6 +616,12 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
 }
+.post {
+    background-image: url(/img/Post.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 .switch-btns {
@@ -724,7 +730,18 @@ hr {
         align-items: center;
         gap: 10px;
     }
-
+    .card-overlay:hover .card-overlay-text {
+        height: 30%;
+    }
+    .overlay-text-title {
+        font-size: 12px;
+        line-height: 10px;
+    }
+    .overlay-text-text {
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 10px;
+    }
     .card-overlay {
         width: 20vw;
         height: 25vh;
@@ -908,8 +925,8 @@ hr {
     gap: 8px;
 }
 .card-overlay {
-    width: 35vw;
-    height: 35vh;
+    width: 25vw;
+    height: 25vh;
     border-radius: 10px;
     position: relative;
 }
@@ -921,14 +938,14 @@ hr {
     font-size: 10px;
 }
 .overlay-text-title {
-    font-weight: 600;
-    font-size: 10px;
+    font-weight: 400;
+    font-size: 8px;
 }
 
 .overlay-text-text {
     font-style: normal;
     font-weight: 400;
-    font-size: 8px;
+    font-size: 6px;
 }
 .card-overlay:hover .card-overlay-text {
     height: 35%;
