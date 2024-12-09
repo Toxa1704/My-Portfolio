@@ -88,6 +88,8 @@ body {
 }
 
 .header-menu {
+    z-index: 25;
+    background-color: #36C2CE;
     display: none;
     position: absolute;
     top: 13%;
@@ -186,6 +188,7 @@ body {
     transform: scale(1, 1.1);
     background-color: #36C2CE;
 }
+
 .block-form>a {
     color: #FFFFFF;
 }
@@ -500,6 +503,7 @@ body {
     flex-direction: column;
     margin-top: 70px;
 }
+
 .mailinglist-title {
     padding-left: 0;
 }
@@ -518,6 +522,7 @@ body {
     box-shadow: -8px 6px 18px 1px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
 }
+
 .block-content-text {
     display: flex;
     flex-direction: column;
@@ -525,82 +530,89 @@ body {
     align-items: center;
     gap: 30px;
 }
+
 .content-text-title {
-font-family: 'Jura';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 59px;
-display: flex;
-align-items: center;
-text-align: center;
-color: #424242;
-padding: 0 14px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #424242;
+    padding: 0 14px;
 }
+
 .content-text-text {
-font-family: 'Jura';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-display: flex;
-align-items: center;
-letter-spacing: 0.05em;
-color: #696969;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+    color: #696969;
 }
+
 .block-content-text>form {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
+
 .content-text-input {
-width: 440px;
-height: 50px;
-background: #FFFFFF;
-border: 1px solid #D8D8D8;
-border-radius: 40px;
-font-family: 'Jura';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.05em;
-color: #696969;
-padding-left: 25px;
+    width: 440px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #D8D8D8;
+    border-radius: 40px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #696969;
+    padding-left: 25px;
 }
+
 .footer {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 30px 60px;
-gap: 60px;
-margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    gap: 60px;
+    margin-top: 70px;
 }
+
 .footer-about-title,
 .footer-quicklinks-title,
 .footer-social-title,
 .footer-choice {
-font-family: 'Jura';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-color: #696969;
-padding: 4px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #696969;
+    padding: 4px;
 }
 
 .footer-quicklinks-list>a>li,
 .footer-about-list>a>li {
     list-style-type: none;
-font-family: 'Jura';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 21px;
-text-decoration-line: underline;
-color: #696969;
-padding-top: 10px;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-decoration-line: underline;
+    color: #696969;
+    padding-top: 10px;
 }
+
 .footer-social,
 .footer-choice>form {
     display: flex;
@@ -608,23 +620,77 @@ padding-top: 10px;
     align-items: center;
     gap: 14px;
 }
+
 .footer-choice>form>select {
-font-family: 'Jura';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 24px;
-letter-spacing: 0.05em;
-color: #696969;
-padding: 12px 16px;
-width: 240px;
-height: 50px;
-background: #FFFFFF;
-box-shadow: -8px 6px 18px 1px rgba(0, 0, 0, 0.2);
-border-radius: 40px;
-appearance: none;
-background-image: url(../img/icon/arrow_drop_down.png); 
-background-repeat: no-repeat;
-background-size: contain;
-background-position: right;
+    font-family: 'Jura';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.05em;
+    color: #696969;
+    padding: 12px 16px;
+    width: 240px;
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: -8px 6px 18px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    appearance: none;
+    background-image: url(../img/icon/arrow_drop_down.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+.sending-btns {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 25;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+.sending-btns-content {
+    margin: 15% auto;
+    width: 40%;
+    height: 40%;
+    border: 2px solid #4535C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+
+.sending-btn {
+    padding: 10px 30px;
+    width: 200px;
+    height: 36px;
+    left: 258px;
+    top: 110.5px;
+    background: #4535C1;
+    border-radius: 24px;
+    border: none;
+
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.natural>a,
+.business>a {
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
+}
+
+.sending-btn:hover {
+    transform: scale(1, 1.2);
+    background-color: #36C2CE;
 }

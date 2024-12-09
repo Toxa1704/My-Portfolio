@@ -7,18 +7,20 @@
     <title>fieldset for sending</title>
   </head>
   <body>
-    <h1 class="sending-title">Форма для доставки</h1>
+    <h1 class="sending-title">Форма для доставки (бізнес клієнт)</h1>
+
     <section class="sending-natural-person">
       <form>
         <fieldset action="" class="person-info">
           <legend for="">Інформація про відправника</legend>
           <br />
-          <input type="text" placeholder="Ім'я та прізвище" /><br />
+          <input type="text" placeholder="Назва компанії" /><br />
+          <input type="text" placeholder="Ім'я та прізвище відповідальної особи" /><br />
           <input
             type="tel"
             name="tel"
             id="tel"
-            placeholder="Номер телефону"
+            placeholder="контактний номер телефону"
           /><br />
           <input
             type="email"
@@ -56,7 +58,8 @@
           </div>
           <div class="recipient-infieldsetation">
             <label for="">Інформація про отримувача</label><br />
-            <input type="text" placeholder="Ім'я та прізвище" /><br />
+            <input type="text" placeholder="Назва компанії" /><br />
+            <input type="text" placeholder="Ім'я та прізвище відповідальної особи" /><br />
             <input
               type="tel"
               name="tel"
@@ -67,7 +70,7 @@
               type="email"
               name="email"
               id="email"
-              placeholder="Ваш E-mail"
+              placeholder="E-mail"
             /><br />
           </div>
         </fieldset>
@@ -92,6 +95,7 @@
         <fieldset action="" class="natural-person-parcel-details">
           <legend class="parsel-detail-title">Деталі посилки</legend>
           <input type="text" placeholder="Опис вмісту посилки"/><br>
+          <input type="number" placeholder="Кількість місць">
           <input type="number" placeholder="Вага (кг)">
           <div>
             <label for="size">Розміри посилки (Довжина, Ширина, Висота в см):</label>

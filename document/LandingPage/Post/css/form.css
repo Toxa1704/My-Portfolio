@@ -26,32 +26,7 @@ body {
     text-align: center;
     padding-top: 50px;
 }
-.sending-btns {
-    display: none;
-    text-align: center; 
-    margin-top:100px;
-}
-.sending-btn {
-padding: 10px 30px;
-width: 200px;
-height: 36px;
-left: 258px;
-top: 110.5px;
-background: #4535C1;
-border-radius: 24px;
-border: none;
-color: aliceblue;
-font-weight: 700;
-font-size: 14px;
-line-height: 17px;
-letter-spacing: 0.05em;
-transition: all 0.3s;
-cursor: pointer;
-}
-.sending-btn:hover {
-    transform: scale(1, 1.2);
-    background-color: #36C2CE;
-}
+
 input {
     width: 350px;
     height: 40px;
@@ -73,7 +48,9 @@ legend {
 .natural-person-departure,
 .natural-person-delivery,
 .natural-person-parcel-details,
-.natural-person-type-delivery {
+.natural-person-type-delivery,
+.natural-person-additional-services,
+.natural-person-payment-method {
     margin: 0 auto;
     margin-top: 15px;
     padding: 15px;
@@ -93,13 +70,23 @@ border-radius: 15px;
     justify-content: center;
     gap: 5px;
 }
-.input-type-radio {
+.input-type-radio,
+.input-type-checkbox {
     display: flex;
     align-items: center;
     gap: 5px;
     padding-left: 33%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 17px;
+    letter-spacing: 0.05em;
 }
-input[type="radio"] {
+.input-type-checkbox,
+.radio-payment {
+    padding-left: 13%;
+}
+input[type="radio"],
+input[type=checkbox] {
     margin: 0;
     max-width: 20px;
 }
